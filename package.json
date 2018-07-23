@@ -12,5 +12,8 @@
   ],
   "author": "ameerthehacker",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^23.4.1"
+  }
 }

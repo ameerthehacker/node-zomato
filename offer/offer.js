@@ -1,14 +1,21 @@
 class Offer {
+    constructor() {
+        this.monthlyOffers = {
+            6: 0.3,
+            7: 0.2 
+        }
+    }
+
     getMonthlyOffer() {
         const currentMonth = new Date().getMonth();
 
-        switch(currentMonth) {
-            case 6:
-                return 0.3;
-            case 7:
-                return 0.2;
-            default:
-                return 0;
+        const offerPercentage  = this.monthlyOffers[currentMonth];
+
+        if(offerPercentage !== undefined) {
+            return offerPercentage;
+        }
+        else {
+            return 0;
         }
     }
 }
