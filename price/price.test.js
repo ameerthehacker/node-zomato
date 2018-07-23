@@ -4,7 +4,7 @@ const Offer = require('../offer/offer');
 jest.mock('../offer/offer');
 
 describe('Price', () => {
-    let priceObj, offerObj, offerPercentage = 0.2, cartPrice = 200, getMonthlyOfferMock;
+    let priceObj, offerObj, offerPercentage = 0.2, cartPrice = 200;
 
     beforeEach(() => {
         offerObj = new Offer();
